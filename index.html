@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Lillos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> <i> Mundo Lillos</i> </h1>
+    <h2>
+      Encuentra aquí todas las variedades de lillo, y al mejor precio siempre.
+    </h2>
+  </header>
+  <div id="fondo">
+    <img src="./img/mundolillo.jpeg" alt="arte callejero">
+
+    <section>
+      <article>
+        <img src="./img/celulosanaranja.jpg" alt="papel celulosa naranja">
+        <img src="./img/libella.jpg" alt="papel libella pure">
+        <img src="./img/saborchocolate.jpg" alt="papel sabor chocolate">
+      </article>
+      </section>
+
+    <section id="cotizador">
+      <h2>Cotizador de Lillos</h2>
+      <ul id="productos"></ul>
+      <form onsubmit="cotizarLillos()">
+        <label for="lillos">Seleccione un Lillo:</label>
+        <select id="lillos" name="lillos">
+          <option value="">Seleccione...</option>
+          <option value="1">Lillo Celulosa naranja x10</option>
+          <option value="2">Lillo Celulosa naranja x15</option>
+          <option value="3">Lillo Celulosa naranja x21</option>
+          <option value="4">Lillo Libella x10</option>
+          <option value="5">Lillo Libella x15</option>
+          <option value="6">Lillo Libella x21</option>
+          <option value="7">Lillo sabor chocolate x10</option>
+          <option value="8">Lillo sabor chocolate x15</option>
+          <option value="9">Lillo sabor chocolate x21</option>
+        </select>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+        <button type="submit">Cotizar</button>
+      </form>
+      <p id="resultado"></p>
+      <button id="realizarCompra">Realizar Compra</button>
+    </section>
+
+  </div>
+
+  <script src="main.js"></script>
+  <script src="arrays.js"></script>
+</body>
+</html>
